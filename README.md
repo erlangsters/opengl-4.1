@@ -1,5 +1,11 @@
 # OpenGL 4.1 binding for the BEAM
 
+[![Erlangsters Repository](https://img.shields.io/badge/erlangsters-opengl--4.1-%23a90432)](https://github.com/erlangsters/opengl-4.1)
+![Supported Erlang/OTP Versions](https://img.shields.io/badge/erlang%2Fotp-28-%23a90432)
+![Current Version](https://img.shields.io/badge/version-0.0.1-%23354052)
+![License](https://img.shields.io/github/license/erlangsters/opengl-4.1)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/erlangsters/opengl-4.1/build.yml)](https://github.com/erlangsters/opengl-4.1/actions/workflows/build.yml)
+[![Documentation Link](https://img.shields.io/badge/documentation-available-yellow)](https://erlangsters.github.io/opengl-4.1/)
 
 This repository contains the generated OpenGL 4.1 binding for Erlang and
 Elixir. The public API is exposed through the `gl` module and follows the
