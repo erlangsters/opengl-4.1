@@ -1,13 +1,13 @@
 {application, opengl_4_1, [
-    {description, "An OTP library"},
-    {vsn, "0.0.1"},
-    {registered, []},
-    {applications, [
-        kernel,
-        stdlib
-    ]},
-    {env, []},
-    {modules, []},
-    {licenses, []},
-    {links, []}
- ]}.
+  {description, "OpenGL 4.1 binding for the BEAM"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {env, []},
+  {modules, [gl]},
+  {licenses, ["MIT"]},
+  {links, ["https://github.com/erlangsters/opengl-4.1"]}
+]}.
