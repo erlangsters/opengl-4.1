@@ -14,7 +14,7 @@ shader_test() ->
     {ok, Source} = gl:get_shader_source(Shader, 4096),
     ok = gl_test_support:assert_nonempty_binary(Source),
     ok = gl:compile_shader(Shader),
-    {ok, true} = gl:get_shader_compile_status(Shader),
+    {ok, [1]} = gl:get_shader(Shader, compile_status, 1),
     {ok, InfoLog} = gl:get_shader_info_log(Shader, 1024),
     ok = gl_test_support:assert_binary(InfoLog),
     ok = gl:delete_shader(Shader),

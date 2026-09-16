@@ -27,14 +27,14 @@ create_program() ->
         "void main() { v_color = u_color; gl_Position = position; }"
     ]]),
     ok = gl:compile_shader(VertexShader),
-    {ok, true} = gl:get_shader_compile_status(VertexShader),
+    {ok, [1]} = gl:get_shader(VertexShader, compile_status, 1),
     {ok, FragmentShader} = gl:create_shader(fragment_shader),
     ok = gl:shader_source(FragmentShader, [[
         "varying vec4 v_color; ",
         "void main() { gl_FragColor = v_color; }"
     ]]),
     ok = gl:compile_shader(FragmentShader),
-    {ok, true} = gl:get_shader_compile_status(FragmentShader),
+    {ok, [1]} = gl:get_shader(FragmentShader, compile_status, 1),
     {ok, Program} = gl:create_program(),
     ok = gl:attach_shader(Program, VertexShader),
     ok = gl:attach_shader(Program, FragmentShader),
