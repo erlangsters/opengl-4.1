@@ -1,4 +1,4 @@
-{application, opengl_4_1, [
+{application, gl, [
   {description, "OpenGL 4.1 binding for the BEAM"},
   {vsn, "0.0.1"},
   {registered, []},
